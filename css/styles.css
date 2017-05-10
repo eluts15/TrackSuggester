@@ -1,13 +1,36 @@
-#recommendation {
+/*Hide Recommendations on Load*/
+#recommendation, #recommendation2, #recommendation3 {
   display:none;
+}
+/*Side Navigation Menu Thing*/
+.sidenav {
+  height: 100%;
+  width: 0 auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
-#recommendation2 {
-  display:none;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
 }
 
-#recommendation3 {
-  display:none;
+/*Change Color of Nav Links on Hover */
+.sidenav a:hover, .offcanvas a:focus {
+  color: #847B7B;
+  text-align: center;
 }
+
+
+
 
 
