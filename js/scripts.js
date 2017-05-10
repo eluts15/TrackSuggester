@@ -20,9 +20,9 @@ $(function() { //iife
     event.preventDefault();
 
 
-    var languagePref = $("#language-pref").val(); //Should store as a string i think.
+    var languagePref = $("#language-pref").val();
     var choice = $("input:radio[name=choice]:checked").val();
-    var trueOrFalse = $("input:checkbox[]]")
+    var trueOrFalse = $("input:checkbox[]]");
 
  
     if (languagePref === "golang" || languagePref === "csharp") {
@@ -41,5 +41,5 @@ $(function() { //iife
                         $(".recommendation").append("PHP");          
     }
     
-  };
+  });
 });
