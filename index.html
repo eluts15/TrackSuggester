@@ -30,58 +30,30 @@ You are able to discuss the flow of your code and the concepts behind it with an
         <!--Open ended-->
         <p>1. Please select the first <em>option</em> that comes to mind.</p><!--should really be a radio-->
         <select class="form-control" id="language-pref">
-          <option id="one">GOLANG</option>
-          <option id="two">C#</option>
-          <option id="three">CSS</option>
-          <option id="four">ES6</option>
+          <option id="1">GOLANG</option>
+          <option id="2">C#</option>
+          <option id="3">DESIGN</option>
         </select>
 
+        <p>2. What is your favorite early-morning beverage of choice?
+        <select class="form-control" id="drank">
+          <option id="4">COFFEE</option>
+          <option id="5">WATER</option>
+          <option id="6">Anything with copious amounts of caffine</option>
+        </select>
 
-        <!--radio button example-->
-        <p>2. What is a float used for primarily?<p>
-        <div class="radio" name="choice" value="organization">
-          <label>
-            Organizing things nicely on web page.
-          </label>
-        </div>
-        <div class="radio" name="choice" value="floating">
-          <label>
-            Place Holder
-          </label>
-        </div>
-        <div class="radio" name="choice" value="css">
-          <label>
-            Place Holder
-          </label>
-        </div>
+        <p>3. Does User Experience sound interesting to you?</p><!--should really be a radio-->
+        <select class="form-control" id="ux">
+          <option id="7">Yes:D</option>
+          <option id="8">No!!!!!</option>
+        </select>
 
-
-        <!--Checkbox type examples-->
-        <p>3. Are you interested in writing scalable software?<p>
-        <div class="checkbox">
-          <input class="checkbox">True</input>
-          <input class="checkbox">false</input>
-        </div>
-
-        <p>4. Are you interested in developing for UX (user experience)?</p>
-        <input class="checkbox" value="1">True</input>
-        <input class="checkbox" value="0">False</input>
-
-        <p>5. Lastly, and most importantly, which drink do you prefer?</p>
-        <select class="form-control" id="most-important">
-          <option>Coffee</option>
-          <option>Red Bull(gives you wings)</option>
-          <option>Water</option>
-
-
-
-        <button class="btn" href="#" type="submit" value="submit">Submit</button><!--Display some thank-you message to user-->
+        <button class="btn" href="#" type="submit" id="sub">Submit</button><!--Display some thank-you message to user-->
       </form>
 
 
       <section id="recommended"><!--initiall hidden-->
-        <p>Thank You For Your Time, it is appreciated.:)</p>
-        <p>We recommend <span class="recommendation"></span> .</p> 
+        <p>Thank You For Your Time, we recommend <span class="insert-here"></span></p>
       <section>
 
     </div><!--END CONTAINER-->

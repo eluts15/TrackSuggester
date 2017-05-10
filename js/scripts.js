@@ -1,10 +1,3 @@
-//Logic
-
-
-
-
-
-
        //\\
       //  \\
      //    \\
@@ -15,31 +8,19 @@
 //User Interface\\
 
 $(function() { //iife
-  $("#submit-form").submit(event) {
-    
+  $("#submit-form").submit(function(event) { 
     event.preventDefault();
 
+    var languagePref = $("#language-pref").val(); //just compare strings
+    console.log(languagePref);
+    console.log(typeof(languagePref));
 
-    var languagePref = $("#language-pref").val();
-    var choice = $("input:radio[name=choice]:checked").val();
-    var trueOrFalse = $("input:checkbox[]]");
 
- 
-    if (languagePref === "golang" || languagePref === "csharp") {
-            console.log("Try something backend related.");
-                        $("#recommended").show();
-                        $(".recommendation").append("C#");
 
+    if (languagePref === "GOLANG" || languagePref === "DESIGN") { //check for a matching string.
+        console.log("You May be interested in learning about backend applications:)");
     }
-    else if (languagePref === "design") {
-            console.log("Consider something design oriented.");
-                        $("#reccomended").show();
-                        $(".recommendation").append("DESIGN");
-    }
-    else {
-                        $("#recommended").show();
-                        $(".recommendation").append("PHP");          
-    }
-    
+    else {console.log("recommend design track?");}
+
   });
 });
