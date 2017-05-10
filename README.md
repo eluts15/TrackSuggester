@@ -1,4 +1,4 @@
-# Project: Dunno Yet
+# Project: Track Helper
 
 
 ## Criteria
@@ -10,6 +10,10 @@
 * Variable names are descriptive of what they represent.
 * Web page is styles using Bootstrap and custom CSS.
 * You are able to discuss the flow of your code and the concepts behind it with an instructor using correct terminology.
+
+## Specification
+
+* Answer the questionaire and echo back a helpful thing.
 
 
 ## Getting Started

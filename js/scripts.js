@@ -12,15 +12,21 @@ $(function() { //iife
     event.preventDefault();
 
     var languagePref = $("#language-pref").val(); //just compare strings
-    console.log(languagePref);
-    console.log(typeof(languagePref));
+    var drinkPref = parseInt($("#drank").val()); //parse this one as int for science.
+    var trueOrFalse = parseInt($("#ux").val())
 
 
+    if (languagePref === "GOLANG" || languagePref === "C#" && !"DESIGN") { //check for a matching string. 
+        $("#recommendation").hide();
+        $("#recommendation").show();
 
-    if (languagePref === "GOLANG" || languagePref === "DESIGN") { //check for a matching string.
-        console.log("You May be interested in learning about backend applications:)");
     }
-    else {console.log("recommend design track?");}
+
+    else if (drinkPref > 3 && drinkPref < 6) { //what you drink determines what kind of coding interests.haha
+      $("#recommendation2").show();
+        
+    }
+    else { $("#recommendation3").show(); }
 
   });
 });

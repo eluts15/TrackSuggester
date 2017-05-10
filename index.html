@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <!--
 All previous standards (last review's objectives) are in place
 Site uses branching to return suggestion
@@ -10,56 +8,84 @@ Variable names are descriptive of what they represent
 Web page is styled using Bootstrap and custom CSS
 You are able to discuss the flow of your code and the concepts behind it with an instructor using correct terminology. -->
 
-<html>
-  
+
+<!--TODO: Implement a radio button
+    TODO: Add a backgroud/backsplash and implement CSS
+
+
+
+-->
+<html>  
   <head> 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
   </head>
-
   <body>
     <div class="container">
-      <header class="jumbotron">
-        <h1>Hello, World!!</h1>
-      </header>
+      <div id="header" class="clearfix"><!--Nav Bar-->
+      <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+          <li class="btn"><a href="#">HOME</a></li>
+          <li class="btn"><a href="#">CLASSES</a></li>
+          <li class="btn"><a href="#">ABOUT US</a></li>
+        </ul><!--END HEADER NAV-->
+      </div>
+
+      <aside id="side-nav" class="sidenav">
+        <a href="#">MDN Resources</a>
+        <a href="#">PLACEHOLDER</a>
+        <a href="#">PLACEHOLDER</a>
+        <a href="#">PLACEHOLDER</a>
+        <a href="#">PLACEHOLDER</a>
+      </aside>
+
 
       <form id="submit-form" class="form-group">
 
         <!--Open ended-->
-        <p>1. Please select the first <em>option</em> that comes to mind.</p><!--should really be a radio-->
+        <h3> 1. Please select the first <em>option</em> that comes to mind.</h3><!--should really be a radio-->
         <select class="form-control" id="language-pref">
-          <option id="1">GOLANG</option>
-          <option id="2">C#</option>
-          <option id="3">DESIGN</option>
+          <option>GOLANG</option>
+          <option>C#</option>
+          <option>DESIGN</option>
         </select>
 
-        <p>2. What is your favorite early-morning beverage of choice?
+        <h3> 2. What is your favorite early-morning beverage of choice?</h3>
         <select class="form-control" id="drank">
-          <option id="4">COFFEE</option>
-          <option id="5">WATER</option>
-          <option id="6">Anything with copious amounts of caffine</option>
+          <option value="4">COFFEE</option>
+          <option value="5">WATER</option>
+          <option value="6">Anything with copious amounts of caffine</option>
         </select>
 
-        <p>3. Does User Experience sound interesting to you?</p><!--should really be a radio-->
+        <h3>3. Does User Experience sound interesting to you?</h3><!--should really be a radio-->
         <select class="form-control" id="ux">
-          <option id="7">Yes:D</option>
-          <option id="8">No!!!!!</option>
+          <option value="7">Yes:D</option>
+          <option value="8">No!!!!!</option>
         </select>
 
-        <button class="btn" href="#" type="submit" id="sub">Submit</button><!--Display some thank-you message to user-->
+
+        <button class="btn" href="#" type="submit">Finish</button><!--Display some thank-you message to user-->
       </form>
 
+      
+      <section id="recommendation"><!--initial hidden-->
+        <p>Thank You For Your Time, we think you will be an excellent fit for C#.</p><!--append with span instead-->
+      </section>
 
-      <section id="recommended"><!--initiall hidden-->
-        <p>Thank You For Your Time, we recommend <span class="insert-here"></span></p>
-      <section>
+      <section id="recommendation2">
+        <p>Thank You, we believe you would enjoy learning more about making user experience the best thing ever:D</p>
+      </section>
+
+       <section id="recommendation3">
+        <p>Thank You For Your Time, we recommend PHP.</p>
+      </section>
+       
 
     </div><!--END CONTAINER-->
 
   </body>
-
 </html>
 
 
